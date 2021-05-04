@@ -18,7 +18,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/seggga/querier/internal/pkg/mytoken"
+	"github.com/seggga/csv-query/internal/pkg/mytoken"
 )
 
 // An ErrorHandler may be provided to Scanner.Init. If a syntax error is

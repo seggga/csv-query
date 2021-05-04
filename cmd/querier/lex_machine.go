@@ -3,9 +3,9 @@ package main
 import (
 	"errors"
 
-	"github.com/seggga/querier/internal/pkg/mylexer"
-	"github.com/seggga/querier/internal/pkg/myscanner"
-	"github.com/seggga/querier/internal/pkg/mytoken"
+	"github.com/seggga/csv-query/internal/pkg/mylexer"
+	"github.com/seggga/csv-query/internal/pkg/myscanner"
+	"github.com/seggga/csv-query/internal/pkg/mytoken"
 )
 
 func fillLexMachine(query string) (*mylexer.LexMachine, error) {

@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/seggga/querier/internal/pkg/mytoken"
+	"github.com/seggga/csv-query/internal/pkg/mytoken"
 )
 
 type Lexemma struct {

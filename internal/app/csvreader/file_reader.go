@@ -8,7 +8,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/seggga/querier/internal/pkg/mylexer"
+	"github.com/seggga/csv-query/internal/pkg/mylexer"
 )
 
 func ReadTheFile(lm *mylexer.LexMachine, ctx context.Context, finishChan chan struct{}) error {

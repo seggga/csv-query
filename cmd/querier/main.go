@@ -8,8 +8,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/seggga/querier/config"
-	"github.com/seggga/querier/internal/app/csvreader"
+	"github.com/seggga/csv-query/config"
+	"github.com/seggga/csv-query/internal/app/csvreader"
 	"github.com/sirupsen/logrus"
 )
 
