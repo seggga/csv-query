@@ -1,13 +1,6 @@
 package lexmachine
 
-import (
-	"errors"
-
-	"github.com/seggga/csv-query/internal/pkg/mylexer"
-	"github.com/seggga/csv-query/internal/pkg/myscanner"
-	"github.com/seggga/csv-query/internal/pkg/mytoken"
-)
-
+/*
 func fillLexMachine(query string) (*mylexer.LexMachine, error) {
 
 	// check user's query
@@ -50,3 +43,4 @@ func fillLexMachine(query string) (*mylexer.LexMachine, error) {
 	return &lm, nil
 
 }
+*/
