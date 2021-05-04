@@ -5,7 +5,7 @@ import (
 )
 
 type ConfigType struct {
-	Timeout int
+	Timeout int64
 	Log     string
 	Err     string
 }
@@ -17,7 +17,7 @@ func GetConfig() (*ConfigType, error) {
 		return nil, err
 	}
 
-	timeout := config.Get("querier.timeout").(int)
+	timeout := config.Get("querier.timeout").(int64)
 	logFile := config.Get("querier.log").(string)
 	errFile := config.Get("querier.err").(string)
 

@@ -13,6 +13,8 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
+var gitCommit string // print git commit version
+
 func main() {
 	// load configuration from file
 	config, err := config.GetConfig()
@@ -51,6 +53,16 @@ func main() {
 	logErr.SetFormatter(&logrus.JSONFormatter{})
 	logErr.SetOutput(fileErr)
 	logErr.Info("logging started")
+
+	// print current directory path
+	path, err := os.Getwd()
+	if err != nil {
+		logErr.Println(err)
+	}
+	fmt.Printf("binary path: %s\n", path)
+
+	// print commit
+	fmt.Printf("commit version: %s\n", gitCommit)
 
 	// load users query
 	fmt.Println("Please, enter the query : ")
